@@ -1,6 +1,6 @@
 import Calculator
 import unittest
-class TestCalculator(unittest.TestCase):
+class TestCalculator1(unittest.TestCase):
 
     def setUp(self):
         self.x=34
@@ -8,28 +8,19 @@ class TestCalculator(unittest.TestCase):
     def tearDown(self):
         self.x = 0
         self.y = 0
-    def test_add(self):
-        #ARRANGE
-        x = 10
-        y = 20
+    def test_add1(self):
         #ACT
         result = Calculator.add(self.x,self.y)
         #assert
         self.assertEqual(result,self.x+self.y)
 
-    def test_sub(self):
-        x = 20
-        y = 10
+    def test_sub1(self):
         result = Calculator.sub(self.x,self.y)
         self.assertEqual(result,self.x-self.y)
-    def test_mul(self):
-        x = 10
-        y = 20
+    def test_mul1(self):
         result = Calculator.mul(self.x,self.y)
         self.assertEqual(result,self.x*self.y)
-    def test_div(self):
-        x = 100
-        y = 20
+    def test_div1(self):
         result = Calculator.div(self.x,self.y)
         self.assertEqual(result,self.x/self.y)
 
