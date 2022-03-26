@@ -5,9 +5,11 @@ class TestCalculator1(unittest.TestCase):
     def setUp(self):
         self.x=34
         self.y=30
+        print("SETUP CALLED")
     def tearDown(self):
         self.x = 0
         self.y = 0
+        print("Teardown called")
     def test_add1(self):
         #ACT
         result = Calculator.add(self.x,self.y)
